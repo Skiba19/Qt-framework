@@ -18,6 +18,10 @@ public:
 private slots:
     void on_browse_Button_clicked();
 
+    void on_pic_destination_Cbox_textActivated(const QString &arg1);
+
+    void on_pic_destination_Cbox_currentTextChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     QList<QString> img_dest_paths;

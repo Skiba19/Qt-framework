@@ -38,3 +38,11 @@ void MainWindow::on_browse_Button_clicked()
     }
 }
 
+
+void MainWindow::on_pic_destination_Cbox_currentTextChanged(const QString &arg1)
+{
+    QPixmap pixmap(arg1);
+    ui->Image->setPixmap(pixmap.scaled(ui->Image->size(), Qt::KeepAspectRatio));
+    ui->Image->setAlignment(Qt::AlignCenter);
+}
+
