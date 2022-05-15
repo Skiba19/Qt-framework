@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="browse_Button">
     <property name="geometry">
      <rect>
-      <x>650</x>
-      <y>20</y>
+      <x>40</x>
+      <y>30</y>
       <width>80</width>
       <height>26</height>
      </rect>
@@ -27,14 +27,89 @@
      <string>Browse</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="Pic_location_Cbox">
+   <widget class="QComboBox" name="pic_destination_Cbox">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>60</y>
+      <x>540</x>
+      <y>30</y>
       <width>231</width>
       <height>26</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Image">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>431</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>30</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Perviously opened file paths:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>141</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Current file path:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cr_file_destination">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>60</y>
+      <width>621</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="paths_textEdit">
+    <property name="geometry">
+     <rect>
+      <x>583</x>
+      <y>129</y>
+      <width>181</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>100</y>
+      <width>181</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>List of opened image paths:</string>
     </property>
    </widget>
   </widget>

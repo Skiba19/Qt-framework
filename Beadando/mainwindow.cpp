@@ -21,21 +21,20 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_browse_Button_clicked()
 {
-    QString filename = QFileDialog::getOpenFileName(this, "Select a file to open", QString(), "Text files (*.txt)");
-    if(filename.isEmpty()) return;
-    QFile infile(filename);
-    infile.open(QIODevice::ReadOnly);
-    QTextStream stream(&infile);
-    QString content = stream.readAll();
-    ui->Image->setText(content);
-    QFileInfo info(infile);
-    //ui->feladat3_Label->setText(infile.fileName()); //ezzel az egész elérési utat átadja
-    ui->feladat3_Label->setText(info.fileName());
-    QMessageBox::information(this, "file info", "File size: "+QString::number(info.size())+" kb\nLast modified: "+info.lastModified().toString());
-    QString filename = QFileDialog::getOpenFileName(this, "Select a file to open", QString(), "Image files (*.png *.jpg *.jpeg *.bmp *.svg)");
-    if(filename.isEmpty()) return;
-    QPixmap pm(filename);
-    QPixmap scaledPm=pm.scaled(ui->feladat4_Label->size(), Qt::KeepAspectRatio);
-    ui->feladat4_Label->setPixmap(scaledPm);
+    QString picure_filename = QFileDialog::getOpenFileName(this, "Select a file to open", QString(), "Image files (*.png *.jpg *.jpeg *.bmp *.svg)");
+    if(picure_filename.isEmpty()) return;
+    QPixmap pm(picure_filename);
+    QPixmap scaledPm=pm.scaled(ui->Image->size(), Qt::KeepAspectRatio);
+    ui->Image->setPixmap(scaledPm);
+    QFile pic_file(picure_filename);
+    ui->cr_file_destination->setText(pic_file.fileName());
+    ui->pic_destination_Cbox->addItem(pic_file.fileName());
+    QString paths;
+    img_dest_paths.append(pic_file.fileName());
+    for(auto it:img_dest_paths)
+    {
+        paths+=it+"\n";
+        ui->paths_textEdit->setText(paths);
+    }
 }
 

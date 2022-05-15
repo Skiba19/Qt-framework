@@ -15,7 +15,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_browse_Button_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QList<QString> img_dest_paths;
 };
 #endif // MAINWINDOW_H
