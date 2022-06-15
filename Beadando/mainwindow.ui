@@ -92,8 +92,8 @@
    <widget class="QTextEdit" name="paths_textEdit">
     <property name="geometry">
      <rect>
-      <x>583</x>
-      <y>129</y>
+      <x>590</x>
+      <y>220</y>
       <width>181</width>
       <height>321</height>
      </rect>
@@ -102,14 +102,40 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>100</y>
+      <x>600</x>
+      <y>200</y>
       <width>181</width>
       <height>18</height>
      </rect>
     </property>
     <property name="text">
      <string>List of opened image paths:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteButton">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>160</y>
+      <width>221</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete selected image from the list</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="largeButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>120</y>
+      <width>151</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open in large size</string>
     </property>
    </widget>
   </widget>
@@ -124,12 +150,17 @@
    </property>
    <widget class="QMenu" name="menuMain_Window">
     <property name="title">
-     <string>Main Window</string>
+     <string>File</string>
     </property>
    </widget>
    <addaction name="menuMain_Window"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFile">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

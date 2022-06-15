@@ -27,6 +27,7 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *actionFile;
     QWidget *centralwidget;
     QPushButton *browse_Button;
     QComboBox *pic_destination_Cbox;
@@ -36,6 +37,8 @@ public:
     QLabel *cr_file_destination;
     QTextEdit *paths_textEdit;
     QLabel *label_2;
+    QPushButton *deleteButton;
+    QPushButton *largeButton;
     QMenuBar *menubar;
     QMenu *menuMain_Window;
     QStatusBar *statusbar;
@@ -45,6 +48,8 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(800, 600);
+        actionFile = new QAction(MainWindow);
+        actionFile->setObjectName(QString::fromUtf8("actionFile"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         browse_Button = new QPushButton(centralwidget);
@@ -67,10 +72,16 @@ public:
         cr_file_destination->setGeometry(QRect(150, 60, 621, 18));
         paths_textEdit = new QTextEdit(centralwidget);
         paths_textEdit->setObjectName(QString::fromUtf8("paths_textEdit"));
-        paths_textEdit->setGeometry(QRect(583, 129, 181, 321));
+        paths_textEdit->setGeometry(QRect(590, 220, 181, 321));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(590, 100, 181, 18));
+        label_2->setGeometry(QRect(600, 200, 181, 18));
+        deleteButton = new QPushButton(centralwidget);
+        deleteButton->setObjectName(QString::fromUtf8("deleteButton"));
+        deleteButton->setGeometry(QRect(570, 160, 221, 26));
+        largeButton = new QPushButton(centralwidget);
+        largeButton->setObjectName(QString::fromUtf8("largeButton"));
+        largeButton->setGeometry(QRect(610, 120, 151, 26));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -92,13 +103,16 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        actionFile->setText(QCoreApplication::translate("MainWindow", "File", nullptr));
         browse_Button->setText(QCoreApplication::translate("MainWindow", "Browse", nullptr));
         Image->setText(QString());
         label_3->setText(QCoreApplication::translate("MainWindow", "Perviously opened file paths:", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Current file path:", nullptr));
         cr_file_destination->setText(QString());
         label_2->setText(QCoreApplication::translate("MainWindow", "List of opened image paths:", nullptr));
-        menuMain_Window->setTitle(QCoreApplication::translate("MainWindow", "Main Window", nullptr));
+        deleteButton->setText(QCoreApplication::translate("MainWindow", "Delete selected image from the list", nullptr));
+        largeButton->setText(QCoreApplication::translate("MainWindow", "Open in large size", nullptr));
+        menuMain_Window->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
     } // retranslateUi
 
 };

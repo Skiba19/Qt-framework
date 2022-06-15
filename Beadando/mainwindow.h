@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "large_pic.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,9 +19,12 @@ public:
 private slots:
     void on_browse_Button_clicked();
 
-    void on_pic_destination_Cbox_textActivated(const QString &arg1);
-
     void on_pic_destination_Cbox_currentTextChanged(const QString &arg1);
+
+
+    void on_deleteButton_clicked();
+
+    void on_largeButton_clicked();
 
 private:
     Ui::MainWindow *ui;
