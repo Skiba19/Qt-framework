@@ -5,12 +5,25 @@
 #include <QTextStream>
 #include <QMessageBox>
 #include <QPixmap>
+QString url;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QFile file("all_path.txt");
+    file.open(QIODevice::ReadOnly);
+    QTextStream stream(&file);
+    while(!stream.atEnd())
+    {
+        QString data=stream.readLine();
+        if(data!="")
+        {
+            ui->pic_destination_Cbox->addItem(data);
+        }
+    }
+    file.close();
 }
 
 MainWindow::~MainWindow()
@@ -21,6 +34,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_browse_Button_clicked()
 {
     QString picture_filename = QFileDialog::getOpenFileName(this, "Select a file to open", QString(), "Image files (*.png *.jpg *.jpeg *.bmp *.svg)");
+    url=picture_filename;
     if(picture_filename.isEmpty()) return;
     QPixmap pm(picture_filename);
     QPixmap scaledPm=pm.scaled(ui->Image->size(), Qt::KeepAspectRatio);
@@ -28,6 +42,7 @@ void MainWindow::on_browse_Button_clicked()
     QFile pic_file(picture_filename);
     ui->cr_file_destination->setText(pic_file.fileName());
     ui->pic_destination_Cbox->addItem(pic_file.fileName());
+    ui->pic_destination_Cbox->setCurrentText(pic_file.fileName());
     QString paths;
     img_dest_paths.append(pic_file.fileName());
     for(auto it:img_dest_paths)
@@ -35,11 +50,6 @@ void MainWindow::on_browse_Button_clicked()
         paths+=it+"\n";
         ui->paths_textEdit->setText(paths);
     }
-
-    QFile file("all_path.txt");
-    QTextStream s(&file);
-    s<<picture_filename;
-    file.close();
 }
 
 
@@ -58,11 +68,26 @@ void MainWindow::on_deleteButton_clicked()
     ui->cr_file_destination->setText("");
 }
 
-
 void MainWindow::on_largeButton_clicked()
 {
-    large_pic *lpw=new large_pic;
+    large_pic *lpw=new large_pic(nullptr,ui->pic_destination_Cbox->currentText());
     lpw->show();
     this->hide();
+}
+
+
+void MainWindow::on_saveButton_clicked()
+{
+    QFile file("all_path.txt");
+    file.open(QIODevice::ReadOnly);
+    QString paths=file.readAll();
+    file.remove();
+    file.open(QIODevice::WriteOnly);
+    QString path("all_path.txt");
+    paths+=ui->pic_destination_Cbox->currentText()+"\n";
+    QTextStream s(&file);
+    s<<paths;
+    file.close();
+    QMessageBox::information(this, "Path saved", "This destination has been saved.");
 }
 

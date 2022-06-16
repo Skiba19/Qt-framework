@@ -22,18 +22,23 @@ class Ui_large_pic
 public:
     QPushButton *pushButton;
     QLabel *Image;
+    QPushButton *pushButton_2;
 
     void setupUi(QWidget *large_pic)
     {
         if (large_pic->objectName().isEmpty())
             large_pic->setObjectName(QString::fromUtf8("large_pic"));
-        large_pic->resize(547, 455);
+        large_pic->resize(733, 669);
         pushButton = new QPushButton(large_pic);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(10, 10, 80, 26));
         Image = new QLabel(large_pic);
         Image->setObjectName(QString::fromUtf8("Image"));
-        Image->setGeometry(QRect(240, 220, 54, 18));
+        Image->setGeometry(QRect(13, 127, 711, 531));
+        Image->setAlignment(Qt::AlignCenter);
+        pushButton_2 = new QPushButton(large_pic);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(640, 10, 80, 26));
 
         retranslateUi(large_pic);
 
@@ -44,7 +49,8 @@ public:
     {
         large_pic->setWindowTitle(QCoreApplication::translate("large_pic", "Form", nullptr));
         pushButton->setText(QCoreApplication::translate("large_pic", "Back", nullptr));
-        Image->setText(QCoreApplication::translate("large_pic", "TextLabel", nullptr));
+        Image->setText(QString());
+        pushButton_2->setText(QCoreApplication::translate("large_pic", "Show", nullptr));
     } // retranslateUi
 
 };

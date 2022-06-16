@@ -26,6 +26,8 @@ private slots:
 
     void on_largeButton_clicked();
 
+    void on_saveButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QList<QString> img_dest_paths;

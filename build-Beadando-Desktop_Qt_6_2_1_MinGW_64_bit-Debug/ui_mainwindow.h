@@ -39,6 +39,7 @@ public:
     QLabel *label_2;
     QPushButton *deleteButton;
     QPushButton *largeButton;
+    QPushButton *saveButton;
     QMenuBar *menubar;
     QMenu *menuMain_Window;
     QStatusBar *statusbar;
@@ -82,6 +83,9 @@ public:
         largeButton = new QPushButton(centralwidget);
         largeButton->setObjectName(QString::fromUtf8("largeButton"));
         largeButton->setGeometry(QRect(610, 120, 151, 26));
+        saveButton = new QPushButton(centralwidget);
+        saveButton->setObjectName(QString::fromUtf8("saveButton"));
+        saveButton->setGeometry(QRect(650, 80, 80, 26));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -112,6 +116,7 @@ public:
         label_2->setText(QCoreApplication::translate("MainWindow", "List of opened image paths:", nullptr));
         deleteButton->setText(QCoreApplication::translate("MainWindow", "Delete selected image from the list", nullptr));
         largeButton->setText(QCoreApplication::translate("MainWindow", "Open in large size", nullptr));
+        saveButton->setText(QCoreApplication::translate("MainWindow", "Save path", nullptr));
         menuMain_Window->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
     } // retranslateUi
 
