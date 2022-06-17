@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -40,6 +41,12 @@ public:
     QPushButton *deleteButton;
     QPushButton *largeButton;
     QPushButton *saveButton;
+    QLabel *label_4;
+    QLabel *label_5;
+    QLabel *label_6;
+    QLineEdit *lineEdit;
+    QLineEdit *lineEdit_2;
+    QLineEdit *lineEdit_3;
     QMenuBar *menubar;
     QMenu *menuMain_Window;
     QStatusBar *statusbar;
@@ -61,7 +68,7 @@ public:
         pic_destination_Cbox->setGeometry(QRect(540, 30, 231, 26));
         Image = new QLabel(centralwidget);
         Image->setObjectName(QString::fromUtf8("Image"));
-        Image->setGeometry(QRect(40, 130, 431, 311));
+        Image->setGeometry(QRect(40, 130, 481, 311));
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setGeometry(QRect(350, 30, 181, 20));
@@ -86,6 +93,24 @@ public:
         saveButton = new QPushButton(centralwidget);
         saveButton->setObjectName(QString::fromUtf8("saveButton"));
         saveButton->setGeometry(QRect(650, 80, 80, 26));
+        label_4 = new QLabel(centralwidget);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(40, 470, 54, 18));
+        label_5 = new QLabel(centralwidget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(50, 510, 54, 18));
+        label_6 = new QLabel(centralwidget);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setGeometry(QRect(240, 500, 81, 18));
+        lineEdit = new QLineEdit(centralwidget);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setGeometry(QRect(90, 470, 111, 25));
+        lineEdit_2 = new QLineEdit(centralwidget);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(90, 510, 111, 25));
+        lineEdit_3 = new QLineEdit(centralwidget);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        lineEdit_3->setGeometry(QRect(320, 470, 221, 71));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -117,6 +142,9 @@ public:
         deleteButton->setText(QCoreApplication::translate("MainWindow", "Delete selected image from the list", nullptr));
         largeButton->setText(QCoreApplication::translate("MainWindow", "Open in large size", nullptr));
         saveButton->setText(QCoreApplication::translate("MainWindow", "Save path", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "Name:", nullptr));
+        label_5->setText(QCoreApplication::translate("MainWindow", "Tag:", nullptr));
+        label_6->setText(QCoreApplication::translate("MainWindow", "Description:", nullptr));
         menuMain_Window->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
     } // retranslateUi
 

@@ -5,7 +5,7 @@
 #include <QTextStream>
 #include <QMessageBox>
 #include <QPixmap>
-QString url;
+#include "picture.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -34,7 +34,6 @@ MainWindow::~MainWindow()
 void MainWindow::on_browse_Button_clicked()
 {
     QString picture_filename = QFileDialog::getOpenFileName(this, "Select a file to open", QString(), "Image files (*.png *.jpg *.jpeg *.bmp *.svg)");
-    url=picture_filename;
     if(picture_filename.isEmpty()) return;
     QPixmap pm(picture_filename);
     QPixmap scaledPm=pm.scaled(ui->Image->size(), Qt::KeepAspectRatio);
@@ -89,5 +88,11 @@ void MainWindow::on_saveButton_clicked()
     s<<paths;
     file.close();
     QMessageBox::information(this, "Path saved", "This destination has been saved.");
+}
+
+
+void MainWindow::on_addButton_clicked()
+{
+    Picture(ui->tagEdit->text(),ui->nameEdit->text(),ui->pic_destination_Cbox->currentText(),ui->commentEdit->text());
 }
 

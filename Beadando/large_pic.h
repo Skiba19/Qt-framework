@@ -12,7 +12,7 @@ class large_pic : public QWidget
     Q_OBJECT
 
 public:
-    explicit large_pic(QWidget *parent = nullptr, QString asd="");
+    explicit large_pic(QWidget *parent = nullptr, QString path="");
     ~large_pic();
     void getUrl(QString par)
     {

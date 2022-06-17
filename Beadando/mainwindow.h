@@ -28,6 +28,8 @@ private slots:
 
     void on_saveButton_clicked();
 
+    void on_addButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QList<QString> img_dest_paths;

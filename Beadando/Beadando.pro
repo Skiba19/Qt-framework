@@ -11,11 +11,13 @@ CONFIG += c++11
 SOURCES += \
     large_pic.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    picture.cpp
 
 HEADERS += \
     large_pic.h \
-    mainwindow.h
+    mainwindow.h \
+    picture.h
 
 FORMS += \
     large_pic.ui \
