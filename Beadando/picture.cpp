@@ -47,8 +47,3 @@ Picture::Picture(QString tag, QString name, QString path, QString descrition)
     this->path=path;
     this->descrition=descrition;
 }
-
-Picture::Picture(QString path)
-{
-    this->path=path;
-}
