@@ -50,12 +50,12 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="filePathsLabel">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>320</x>
       <y>30</y>
-      <width>181</width>
+      <width>241</width>
       <height>20</height>
      </rect>
     </property>
@@ -63,7 +63,7 @@
      <string>Perviously opened file paths:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="crFilePathLabel">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -99,13 +99,13 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="listImagePathLabel">
     <property name="geometry">
      <rect>
-      <x>600</x>
+      <x>590</x>
       <y>200</y>
-      <width>181</width>
-      <height>18</height>
+      <width>191</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -135,15 +135,15 @@
      </rect>
     </property>
     <property name="text">
-     <string>Open in large size</string>
+     <string>Open in large</string>
     </property>
    </widget>
    <widget class="QPushButton" name="saveButton">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>609</x>
       <y>80</y>
-      <width>80</width>
+      <width>151</width>
       <height>26</height>
      </rect>
     </property>
@@ -151,7 +151,7 @@
      <string>Save path</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="nameLabel">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -164,10 +164,10 @@
      <string>Name:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="tagLabel">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>40</x>
       <y>510</y>
       <width>54</width>
       <height>18</height>
@@ -207,7 +207,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="searchLabel">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -230,7 +230,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="searchNameLabel">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -253,7 +253,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
+   <widget class="QLabel" name="searchTagLabel">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -266,10 +266,10 @@
      <string>Tag:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="commentLabel">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>210</x>
       <y>490</y>
       <width>71</width>
       <height>18</height>
@@ -330,8 +330,10 @@
    </property>
    <widget class="QMenu" name="menuMain_Window">
     <property name="title">
-     <string>File</string>
+     <string>Language</string>
     </property>
+    <addaction name="actionEnglish"/>
+    <addaction name="actionHungarian"/>
    </widget>
    <addaction name="menuMain_Window"/>
   </widget>
@@ -339,6 +341,16 @@
   <action name="actionFile">
    <property name="text">
     <string>File</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionHungarian">
+   <property name="text">
+    <string>Hungarian</string>
    </property>
   </action>
  </widget>

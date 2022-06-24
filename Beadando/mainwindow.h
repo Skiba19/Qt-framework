@@ -30,6 +30,10 @@ private slots:
 
     void on_addButton_clicked();
 
+    void on_actionEnglish_triggered();
+
+    void on_actionHungarian_triggered();
+
 private:
     Ui::MainWindow *ui;
     QList<QString> img_dest_paths;

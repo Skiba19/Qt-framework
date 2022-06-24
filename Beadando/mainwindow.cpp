@@ -96,3 +96,49 @@ void MainWindow::on_addButton_clicked()
     Picture(ui->tagEdit->text(),ui->nameEdit->text(),ui->pic_destination_Cbox->currentText(),ui->commentEdit->text());
 }
 
+
+void MainWindow::on_actionEnglish_triggered()
+{
+    ui->browse_Button->setText("Browse");
+    ui->crFilePathLabel->setText("Current file path:");
+    ui->filePathsLabel->setText("Perviously opened file paths:");
+    ui->searchLabel->setText("Search:");
+    ui->searchNameLabel->setText("Name:");
+    ui->searchTagLabel->setText("Tag");
+    ui->saveButton->setText("Save path");
+    ui->largeButton->setText("Open in large");
+    ui->deleteButton->setText("Delete selected image from the list");
+    ui->listImagePathLabel->setText("List of opened image paths:");
+    ui->nameLabel->setText("Name:");
+    ui->tagLabel->setText("Tag:");
+    ui->commentLabel->setText("Comment:");
+    ui->addButton->setText("Add");
+    ui->deleteButton_2->setText("Delete");
+    ui->modifyButton->setText("Modify");
+    ui->actionEnglish->setText("English");
+    ui->actionHungarian->setText("Hungarian");
+}
+
+
+void MainWindow::on_actionHungarian_triggered()
+{
+    ui->browse_Button->setText("Tallózás");
+    ui->crFilePathLabel->setText("Jelenlegi fájl elérése:");
+    ui->filePathsLabel->setText("Előzőleg megnyitott fájlok elérései:");
+    ui->searchLabel->setText("Keresés:");
+    ui->searchNameLabel->setText("Név:");
+    ui->searchTagLabel->setText("Címke:");
+    ui->saveButton->setText("Elérés mentése");
+    ui->largeButton->setText("Nagyban megnyitás");
+    ui->deleteButton->setText("Törlés a kiválasztott képet a listából");
+    ui->listImagePathLabel->setText("A megnyitott képek elérési útjai:");
+    ui->nameLabel->setText("Név:");
+    ui->tagLabel->setText("Címke:");
+    ui->commentLabel->setText("Komment:");
+    ui->addButton->setText("Hozzáad");
+    ui->deleteButton_2->setText("Törlés");
+    ui->modifyButton->setText("Módosítás");
+    ui->actionEnglish->setText("Angol");
+    ui->actionHungarian->setText("Magyar");
+}
+
