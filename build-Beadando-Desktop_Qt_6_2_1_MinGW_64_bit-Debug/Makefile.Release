@@ -253,6 +253,22 @@ release/moc_large_pic.cpp: ../Beadando/large_pic.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qicon.h \
 		../Beadando/large_pic.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QWidget \
+		../Beadando/picture.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QFileDialog \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qfiledialog.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdir.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfile.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfiledevice.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfileinfo.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdatetime.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcalendar.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qlocale.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qdialog.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QFile \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QTextStream \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QMessageBox \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qmessagebox.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/bin/moc.exe
 	S:\Programs\QtApp\6.2.1\mingw81_64\bin\moc.exe $(DEFINES) --include S:/Stuff/Github/Rep/Qt-framework/build-Beadando-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/release/moc_predefs.h -IS:/Programs/QtApp/6.2.1/mingw81_64/mkspecs/win32-g++ -IS:/Stuff/Github/Rep/Qt-framework/Beadando -IS:/Programs/QtApp/6.2.1/mingw81_64/include -IS:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets -IS:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui -IS:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore -I. -IS:/Programs/QtApp/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IS:/Programs/QtApp/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IS:/Programs/QtApp/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IS:/Programs/QtApp/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IS:/Programs/QtApp/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IS:/Programs/QtApp/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Beadando\large_pic.h -o release\moc_large_pic.cpp
@@ -391,6 +407,22 @@ release/moc_mainwindow.cpp: ../Beadando/mainwindow.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qicon.h \
 		../Beadando/large_pic.h \
 		../Beadando/mainwindow.h \
+		../Beadando/picture.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QFileDialog \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qfiledialog.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdir.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfile.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfiledevice.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfileinfo.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdatetime.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcalendar.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qlocale.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qdialog.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QFile \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QTextStream \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QMessageBox \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qmessagebox.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/QPixmap \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QWidget \
 		release/moc_predefs.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/bin/moc.exe
@@ -556,41 +588,24 @@ release/large_pic.o: ../Beadando/large_pic.cpp ../Beadando/large_pic.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qloggingcategory.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qtabwidget.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qicon.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QWidget \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QFile \
+		../Beadando/picture.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QFileDialog \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qfiledialog.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdir.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfile.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfiledevice.h \
-		ui_large_pic.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QVariant \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QApplication \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qapplication.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcoreapplication.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qeventloop.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfuture.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfutureinterface.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qmutex.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qresultstore.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfuture_impl.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qthreadpool.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qthread.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdeadlinetimer.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qelapsedtimer.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qrunnable.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qexception.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qapplicationpermission.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcoreapplication_platform.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qguiapplication.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qinputmethod.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfileinfo.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdatetime.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcalendar.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qlocale.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qguiapplication_platform.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QLabel \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qlabel.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qframe.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qpicture.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qtextdocument.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QPushButton \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qpushbutton.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qabstractbutton.h
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qdialog.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QFile \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QTextStream \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QMessageBox \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qmessagebox.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/QPixmap \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QWidget \
+		ui_large_pic.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\large_pic.o ..\Beadando\large_pic.cpp
 
 release/main.o: ../Beadando/main.cpp ../Beadando/mainwindow.h \
@@ -727,6 +742,22 @@ release/main.o: ../Beadando/main.cpp ../Beadando/mainwindow.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qicon.h \
 		../Beadando/large_pic.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QWidget \
+		../Beadando/picture.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QFileDialog \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qfiledialog.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdir.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfile.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfiledevice.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfileinfo.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdatetime.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcalendar.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qlocale.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qdialog.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QFile \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QTextStream \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QMessageBox \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qmessagebox.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/QPixmap \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QApplication \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qapplication.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcoreapplication.h \
@@ -746,7 +777,6 @@ release/main.o: ../Beadando/main.cpp ../Beadando/mainwindow.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcoreapplication_platform.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qguiapplication.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qinputmethod.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qlocale.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qguiapplication_platform.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\Beadando\main.cpp
 
@@ -884,65 +914,7 @@ release/mainwindow.o: ../Beadando/mainwindow.cpp ../Beadando/mainwindow.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qicon.h \
 		../Beadando/large_pic.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QWidget \
-		ui_mainwindow.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QVariant \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/QAction \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qaction.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QApplication \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qapplication.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcoreapplication.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qeventloop.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfuture.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfutureinterface.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qmutex.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qresultstore.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfuture_impl.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qthreadpool.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qthread.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdeadlinetimer.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qelapsedtimer.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qrunnable.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qexception.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qapplicationpermission.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcoreapplication_platform.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qguiapplication.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qinputmethod.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qlocale.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qguiapplication_platform.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QComboBox \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qcombobox.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qstyleoption.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qabstractspinbox.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qvalidator.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qregularexpression.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qslider.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qabstractslider.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qstyle.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qtabbar.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qrubberband.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qframe.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qabstractitemmodel.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QLabel \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qlabel.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qpicture.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qtextdocument.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QMenu \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qmenu.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QMenuBar \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qmenubar.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QPushButton \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qpushbutton.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qabstractbutton.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QStatusBar \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qstatusbar.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QTextEdit \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qtextedit.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qtextoption.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qtextcursor.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qtextformat.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/qpen.h \
+		../Beadando/picture.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QFileDialog \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qfiledialog.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdir.h \
@@ -951,12 +923,14 @@ release/mainwindow.o: ../Beadando/mainwindow.cpp ../Beadando/mainwindow.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qfileinfo.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qdatetime.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qcalendar.h \
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/qlocale.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qdialog.h \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QFile \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtCore/QTextStream \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/QMessageBox \
 		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtWidgets/qmessagebox.h \
-		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/QPixmap
+		S:/Programs/QtApp/6.2.1/mingw81_64/include/QtGui/QPixmap \
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\Beadando\mainwindow.cpp
 
 release/picture.o: ../Beadando/picture.cpp ../Beadando/picture.h \

@@ -46,6 +46,12 @@
       <height>311</height>
      </rect>
     </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::CustomContextMenu</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -207,19 +213,6 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="searchLabel">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>80</y>
-      <width>54</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Search:</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="nameSearch">
     <property name="geometry">
      <rect>
@@ -318,7 +311,34 @@
      <string>Delete</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="searchButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>80</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="darkMode">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>0</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dark Mode</string>
+    </property>
+   </widget>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -337,7 +357,6 @@
    </widget>
    <addaction name="menuMain_Window"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="actionFile">
    <property name="text">
     <string>File</string>

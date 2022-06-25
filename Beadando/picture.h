@@ -9,6 +9,7 @@
 class Picture
 {
     QString tag, name, path, descrition;
+
 public:
     Picture(QString tag, QString name, QString path, QString descrition);
     const QString &getTag() const;
