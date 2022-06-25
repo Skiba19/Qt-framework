@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -48,7 +49,6 @@ public:
     QLineEdit *nameEdit;
     QLineEdit *tagEdit;
     QLineEdit *commentEdit;
-    QLabel *searchLabel;
     QLineEdit *nameSearch;
     QLabel *searchNameLabel;
     QLineEdit *tagSearch;
@@ -57,9 +57,11 @@ public:
     QPushButton *addButton;
     QPushButton *modifyButton;
     QPushButton *deleteButton_2;
+    QPushButton *searchButton;
+    QCheckBox *darkMode;
+    QStatusBar *statusbar;
     QMenuBar *menubar;
     QMenu *menuMain_Window;
-    QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -84,6 +86,7 @@ public:
         Image->setObjectName(QString::fromUtf8("Image"));
         Image->setGeometry(QRect(40, 130, 481, 311));
         Image->setContextMenuPolicy(Qt::CustomContextMenu);
+        Image->setAutoFillBackground(false);
         filePathsLabel = new QLabel(centralwidget);
         filePathsLabel->setObjectName(QString::fromUtf8("filePathsLabel"));
         filePathsLabel->setGeometry(QRect(320, 30, 241, 20));
@@ -123,9 +126,6 @@ public:
         commentEdit = new QLineEdit(centralwidget);
         commentEdit->setObjectName(QString::fromUtf8("commentEdit"));
         commentEdit->setGeometry(QRect(280, 460, 201, 81));
-        searchLabel = new QLabel(centralwidget);
-        searchLabel->setObjectName(QString::fromUtf8("searchLabel"));
-        searchLabel->setGeometry(QRect(50, 80, 54, 18));
         nameSearch = new QLineEdit(centralwidget);
         nameSearch->setObjectName(QString::fromUtf8("nameSearch"));
         nameSearch->setGeometry(QRect(180, 80, 111, 25));
@@ -150,16 +150,22 @@ public:
         deleteButton_2 = new QPushButton(centralwidget);
         deleteButton_2->setObjectName(QString::fromUtf8("deleteButton_2"));
         deleteButton_2->setGeometry(QRect(490, 520, 80, 26));
+        searchButton = new QPushButton(centralwidget);
+        searchButton->setObjectName(QString::fromUtf8("searchButton"));
+        searchButton->setGeometry(QRect(40, 80, 80, 26));
+        darkMode = new QCheckBox(centralwidget);
+        darkMode->setObjectName(QString::fromUtf8("darkMode"));
+        darkMode->setGeometry(QRect(690, 0, 101, 24));
         MainWindow->setCentralWidget(centralwidget);
+        statusbar = new QStatusBar(MainWindow);
+        statusbar->setObjectName(QString::fromUtf8("statusbar"));
+        MainWindow->setStatusBar(statusbar);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 800, 23));
         menuMain_Window = new QMenu(menubar);
         menuMain_Window->setObjectName(QString::fromUtf8("menuMain_Window"));
         MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        MainWindow->setStatusBar(statusbar);
 
         menubar->addAction(menuMain_Window->menuAction());
         menuMain_Window->addAction(actionEnglish);
@@ -187,13 +193,14 @@ public:
         saveButton->setText(QCoreApplication::translate("MainWindow", "Save path", nullptr));
         nameLabel->setText(QCoreApplication::translate("MainWindow", "Name:", nullptr));
         tagLabel->setText(QCoreApplication::translate("MainWindow", "Tag:", nullptr));
-        searchLabel->setText(QCoreApplication::translate("MainWindow", "Search:", nullptr));
         searchNameLabel->setText(QCoreApplication::translate("MainWindow", "Name:", nullptr));
         searchTagLabel->setText(QCoreApplication::translate("MainWindow", "Tag:", nullptr));
         commentLabel->setText(QCoreApplication::translate("MainWindow", "Comment:", nullptr));
         addButton->setText(QCoreApplication::translate("MainWindow", "Add", nullptr));
         modifyButton->setText(QCoreApplication::translate("MainWindow", "Modify", nullptr));
         deleteButton_2->setText(QCoreApplication::translate("MainWindow", "Delete", nullptr));
+        searchButton->setText(QCoreApplication::translate("MainWindow", "Search", nullptr));
+        darkMode->setText(QCoreApplication::translate("MainWindow", "Dark Mode", nullptr));
         menuMain_Window->setTitle(QCoreApplication::translate("MainWindow", "Language", nullptr));
     } // retranslateUi
 
